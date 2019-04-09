@@ -12,7 +12,7 @@ namespace EasyInventory.Data
         public int CategoryID { get; set; }
 
         [Required]
-        public int CategoryName { get; set; }
+        public string CategoryName { get; set; }
 
         public bool IsActive { get; set; }
 

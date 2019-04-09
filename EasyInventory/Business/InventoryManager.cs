@@ -17,7 +17,7 @@ namespace EasyInventory.Business
         }
 
 
-        protected List<Product> GetProduct()
+        public List<Product> GetProduct()
         {
             var result = _context.TB_Products.Select(x => x).ToList();
 
@@ -38,7 +38,7 @@ namespace EasyInventory.Business
             return productList;
         }
 
-        protected Product GetProduct(int id)
+        public Product GetProductByID(int id)
         {
             var result = _context.TB_Products.Where(x => x.ProductID==id).FirstOrDefault();
 
@@ -57,7 +57,7 @@ namespace EasyInventory.Business
         }
 
 
-        protected int AddUpdateProduct(Product model)
+        public string AddUpdateProduct(Product model)
         {
             if (model.ProductID == -1)                       // new product
             {
@@ -89,22 +89,39 @@ namespace EasyInventory.Business
                 aProduct.Description = model.Description;
                
             }
+           
+            try
+            {
+                _context.SaveChanges();
+                _context.Dispose();
+                return "";
+            }
+            catch (Exception ex)
+            {
+               return ex.Message;
+            }
+         
 
-            int rowAffected = _context.SaveChanges();
-            _context.Dispose();
-            return rowAffected;            
+                       
 
         }
 
 
 
-        protected int Delete(int id)
+       public string Delete(int id)
         {
             var aProduct = _context.TB_Products.Find(id);           
             aProduct.IsActive = false;
-            int rowAffected = _context.SaveChanges();
-            _context.Dispose();
-            return rowAffected;
+            try
+            {
+                _context.SaveChanges();
+                _context.Dispose();
+                return "";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
 
         }
 
