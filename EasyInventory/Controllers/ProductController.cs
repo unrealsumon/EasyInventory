@@ -37,7 +37,9 @@ namespace EasyInventory.Controllers
         }
 
         [HttpPost]
-        public ActionResult AddUpdateProduct(Product model)
+        [Route("[action]")]
+
+        public ActionResult Post(Product model)
         {
             string result = manager.AddUpdateProduct(model);
             if (result == string.Empty)
@@ -48,24 +50,25 @@ namespace EasyInventory.Controllers
             {
                 return Ok(result);
             }
-          
-        }
-
-
-        [HttpPost]
-        public ActionResult DeleteProduct(int id)
-        {
-            string result = manager.Delete(id);
-            if (result == string.Empty)
-            {
-                return Ok("Save Changes.");
-            }
-            else
-            {
-                return Ok(result);
-            }
+            //return Ok();
 
         }
+
+
+        //[HttpPost]
+        //public ActionResult DeleteProduct(int id)
+        //{
+        //    string result = manager.Delete(id);
+        //    if (result == string.Empty)
+        //    {
+        //        return Ok("Save Changes.");
+        //    }
+        //    else
+        //    {
+        //        return Ok(result);
+        //    }
+
+        //}
 
 
 
