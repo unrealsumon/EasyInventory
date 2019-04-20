@@ -1,0 +1,253 @@
+﻿@media (min-width: 991px) {
+    .col-form-label {
+       text-align:right;
+    }  
+}
+
+.row{
+    margin-top:20px;
+    margin-bottom:20px;
+
+}
+
+.text-danger, .text-success {
+
+    font-weight:700;
+    font-size:15px;
+}
+.table>thead>tr>th {
+    border-bottom-width: 1px;
+    font-size: 1.0625rem;
+    font-weight: 600;
+}
+.table>tbody>tr>td {
+    border-bottom-width: 1px;
+      font-size: 15px;
+    font-weight: 500;
+    color:#787878;
+}
+.main-panel>.content {
+    margin-top: 30px;
+    padding: 30px 15px;
+    min-height: calc(100vh - 123px);
+}
+.col-form-label {
+      font-weight: 500;
+     
+}
+
+.form-control{
+    font-weight:500;
+}
+
+.form-control:focus {
+ background-image: linear-gradient(to top, #00bcd4 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, rgba(180, 180, 180, 0.1) 1px, rgba(180, 180, 180, 0) 1px);
+
+}
+/*.is-focused .form-control {
+    background-image: linear-gradient(to top, #00bcd4 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, rgba(180, 180, 180, 0.1) 1px, rgba(180, 180, 180, 0) 1px);
+}*/
+
+.hidden{
+    display:none;
+}
+
+.login-box {
+    background:rgba(180, 180, 180, 0);
+    border: 0px solid #e1e1e8;
+    border-radius: 0px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    max-width: 610px;
+    margin: 10px auto 25px;
+    padding: 10px ;
+   
+}
+
+.card {
+ box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.24);
+}
+.dark-edition .card{
+    /*background-color: transparent;*/
+}
+body{
+    background-color:#fff;
+}
+
+.card-icon{
+    font-size:25px;
+}
+
+
+
+/*.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+}*/
+
+/*.swal2-popup {
+    display: none;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    width: 32em;
+    max-width: 100%;
+    padding: 1.25em;
+    border-radius: .3125em;
+    background: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+}*/
+
+
+.nav-tabs .nav-item .nav-link  {
+    color: #fff;
+    border: 0;
+    margin: 0;
+    border-radius: 3px;
+    line-height: 24px;
+    /*text-transform: uppercase;*/
+    font-size: 13px;
+    padding: 7px 25px;
+    background-color: transparent;
+    transition: 0.3s background-color 0s;
+   
+}
+
+
+.card-plain [class*="card-header-"]:not(.card-header-icon):not(.card-header-text):not(.card-header-image) {
+    border-radius: 3px;
+    margin-top: -20px;
+    padding: 6px;
+}
+
+select, select.form-control {
+    -moz-appearance:menulist-button;
+     -webkit-appearance:menulist-button; 
+   
+}
+.dark-edition .form-control:read-only {
+    background-image: linear-gradient(to top, #00bcd4 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, rgba(180, 180, 180, 0.1) 1px, rgba(180, 180, 180, 0) 1px);
+    
+   
+
+}
+
+select.selectpicker {
+      display:inherit;
+      margin: 0px;
+      padding-left: 20px;
+            width:100%;
+              background-image: linear-gradient(to top, #00bcd4 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, rgba(180, 180, 180, 0.1) 1px, rgba(180, 180, 180, 0) 1px);
+    
+}
+
+
+select.form-control:not([size]):not([multiple]) {
+    height: calc(2rem + 1px);
+}
+
+select option{
+    background:#FFF;
+    color:#000;
+    font-weight:500;
+    font-size:14px;
+
+}
+
+select option:hover{
+    background-color:#00bcd4;
+    color:#fff;
+    font-weight:500;
+
+}
+
+
+
+
+
+
+
+.dark-edition .bootstrap-select .btn.dropdown-toggle.select-with-transition {
+    border: 0!important; 
+    background-image: linear-gradient(to top, #00bcd4 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, rgba(180, 180, 180, 0.1) 1px, rgba(180, 180, 180, 0) 1px);
+
+    background-size: 0 100%,100% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom,50% calc(100% - 1px);
+    background-color: transparent!important;
+    transition: background 0s linear!important;
+    float: none!important;
+    box-shadow: none!important;
+    border-radius: 0!important;
+    color: #fff!important;
+    height: 34px;
+    padding-left: 0!important;
+    padding-bottom: 5px!important;
+  
+        
+}
+
+
+.bootstrap-select .btn.dropdown-toggle.select-with-transition {
+    border: 0!important; 
+    background-image: linear-gradient(to top, #00bcd4 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
+
+    background-size: 0 100%,100% 100%;
+    background-repeat: no-repeat;
+    background-position: bottom,50% calc(100% - 1px);
+    background-color: transparent!important;
+    transition: background 0s linear!important;
+    float: none!important;
+    box-shadow: none!important;
+    border-radius: 0!important;
+    color: #000!important;
+    height: 34px;
+    padding-left: 0!important;
+    padding-bottom: 5px!important;
+ 
+
+        
+}
+
+.select-with-transition{
+    text-transform:none;
+
+}
+
+.bootstrap-select .btn.dropdown-toggle.select-with-transition:focus {
+    background-size: 100% 100%,100% 100%!important;
+    transition-duration: .3s!important;
+    box-shadow: none!important;
+    outline:none!important;
+    
+
+}
+ .dropdown-item.active, .dropdown-item:active  {
+      background-color: #00bcd4;
+    color: #fff;
+    text-decoration: none;
+  
+}
+
+
+.dark-edition  .dropdown-menu li>a {
+    color: #fff;
+   /*background-color:#00bcd4;*/
+}
+
+
+.custom-option{
+    font-size:14px;
+    font-weight:700;
+    color:#000;
+    height:50px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-bottom:10px;
+    margin-bottom:10px;
+}

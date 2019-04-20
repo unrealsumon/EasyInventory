@@ -1,0 +1,78 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header card-header-info card-header-icon" >
+                <div class="card-icon">
+                    <i class="glyphicon glyphicon-list"></i>
+                </div>
+                <h4 class="card-title">Product List 
+
+                <span>
+                 
+                     <!-- <input type="text" id="searchtext" [(nGmodel)]="searchtext" class="form-control float-right" placeholder="Search" style="width:25%" /> -->
+                </span>
+                </h4>
+             
+
+            </div>
+        
+
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover ">
+                        <thead>
+                            <tr>
+                                <th class="text-info">
+                                    Name
+                                </th>
+                              
+                                <th class="text-info">
+                                    Category
+                                </th>
+                                <th class="text-info">
+                                    Unit Name
+                                </th>
+                                <th class="text-info">
+                                    Barcode
+                                </th>
+                                <th class="text-info">
+                                    Brand
+                                </th>
+                              
+                                <th class="text-info">
+                                    Model
+                                </th>
+                              
+                                
+                                <th class="text-info">
+                                   Desc.
+                                </th>
+                                <th class="text-info">
+                                    Actions
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr  *ngFor = "let p of service.list ">
+                                <td>{{p.ProductName}}</td>
+                                <td>{{p.CategoryID}}</td> 
+                                <td>{{p.UnitName}}</td> 
+                                <td>{{p.Barcode}}</td>
+                                <td>{{p.Brand}}</td>
+                                <td>{{p.Model}}</td>
+                                <td>{{p.Description}}</td>
+                                <td></td>
+                                
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+</div>
