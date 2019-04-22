@@ -1,0 +1,60 @@
+
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-info">
+                      <h4 class="card-title">Edit Profile</h4>
+                      <p class="card-category">Complete your profile</p>
+                  </div>
+                  <div class="card-body">
+                     <button mat-button class="btn btn-success">Save Changes</button>
+                     <br>
+                     <button mat-button class="btn btn-danger"><span>  <i class="material-icons">save </i> Save Changes</span> </button>
+                     <mat-tab-group backgroundColor="primary">
+                            <mat-tab label=angular>  
+                                    <div class="col-md-3">
+                                        <br>
+                                    <mat-form-field>
+                                            <mat-label>Select an option</mat-label>
+                                            <mat-select [(value)]="selected">
+                                              <mat-option>None</mat-option>
+                                              <mat-option value="option1">Option 1</mat-option>
+                                              <mat-option value="option2">Option 2</mat-option>
+                                              <mat-option value="option3">Option 3</mat-option>
+                                            </mat-select>
+                                          </mat-form-field>
+                                          </div>
+                                          <p>You selected: {{selected}}</p>
+                                          
+
+                            </mat-tab>
+                            <mat-tab label= "holla">holla</mat-tab>
+                            <mat-tab label="ihihih"> <button mat-raised-button class="btn btn-info">holla world....</button><br>
+                            <h1>hello</h1></mat-tab>
+                            <mat-tab label="ihihihi">
+                                 <mat-form-field>
+                                     <mat-label>Name</mat-label>
+                                <input matInput required >
+                                <mat-hint>Min 54 charc</mat-hint>
+                            </mat-form-field>
+
+                            <mat-form-field>
+                                    <mat-label>Name</mat-label>
+                               <input matInput required >
+                               <mat-hint>Min 54 charc</mat-hint>
+                           </mat-form-field>
+
+                           <mat-form-field>
+                                <mat-label>Name</mat-label>
+                           <input matInput required >
+                           <mat-hint>Min 54 charc</mat-hint>
+                       </mat-form-field>
+                        
+                        </mat-tab>
+                        </mat-tab-group>
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+  

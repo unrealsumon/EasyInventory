@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-lg-12 col-md-12">
+    <div class="card">
+      <div class="card-header card-header-tabs card-header-info">
+        <div class="nav-tabs-navigation">
+          <div class="nav-tabs-wrapper">
+
+            <ul class="nav nav-tabs" data-tabs="tabs">
+              <li class="nav-item">
+                <a mat-button class="nav-link active" href="#list" data-toggle="tab">
+                  <i class="material-icons">list</i> Product List
+                  <div class="ripple-container"></div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a mat-button class="nav-link" href="#create" data-toggle="tab">
+                  <i class="material-icons">add</i> Create
+                  <div class="ripple-container"></div>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="tab-content">
+          <div class="tab-pane  active " id="list">
+            <app-product-list></app-product-list>
+          </div>
+
+          <div class="tab-pane " id="create">
+            <app-create-product></app-create-product>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
